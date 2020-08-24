@@ -30,8 +30,7 @@ public class CacheContext {
 	 * 
 	 * @param key
 	 * @param value
-	 * @param expire
-	 *            单位秒seconds
+	 * @param expire 单位秒seconds
 	 */
 	public void setValue(String key, String value, int expire) {
 		System.out.println("set key:" + key + ",value:" + value + ",expire:" + expire);
@@ -71,10 +70,8 @@ public class CacheContext {
 	/**
 	 * 取得缓存中得值，设置指定的过期时间<br>
 	 * 如果过期时间<=0的话，就不改变过期时间。
-	 * 
 	 * @param key
-	 * @param expire
-	 *            单位秒
+	 * @param expire 单位秒
 	 * @return
 	 */
 	public String getValue(String key, int expire) {
